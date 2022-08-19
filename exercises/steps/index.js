@@ -17,6 +17,27 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) 
+{
+    let steps = '';
+    let spaces = "";
+    let space = ' ';
+    for (let i=0; i<n; i++)
+    {
+        steps = steps + "#";
+        spaces = space.repeat(n-1-i);
+        console.log(steps + spaces);
+    }
+}
 
 module.exports = steps;
+
+//consoles steps right
+// let steps = '';
+// let spaces = '-';
+// for (let i=0; i<n; i++)
+// {
+//     steps = steps + "#";
+//     console.log(n)
+//     console.log(steps);
+// }
